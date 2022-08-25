@@ -1,0 +1,87 @@
+/* .slides {
+  height: 75vh;
+} */
+
+body {
+  overflow-x: hidden;
+
+}
+
+.welcomeBanner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+}
+
+
+.welcomeBanner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./assets/images/welcome.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("./assets/images/welcome.jpg");
+  filter: grayscale(80%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  z-index: -10;
+}
+
+.welcomeBanner h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.welcomeBannerAndre {
+  height: 50%;
+  width: 50%;
+}
+
+@media (min-width:1200px) {
+  .welcomeBannerAndre {
+    height: 40%;
+    width: 40%;
+  }
+}
+
+
+#andre {
+  filter: grayscale(100%);
+  transition: all 1s ease-in-out;
+}
+
+#andre:hover {
+  filter:grayscale(30%)
+}
+
+
+
+
+.navbar-brand img {
+  height: 50px
+}
+
+.carousel-inner img {
+  height: auto;
+  width: auto;
+}
+
+/* .card {
+  background-color: white;
+} */
+
+.card:hover {
+  background-color: grey;
+  transform: scale(1.05);
+  transition: all 1s;
+}
+

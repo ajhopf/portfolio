@@ -13,6 +13,8 @@ body {
 
 }
 
+
+
 /*NAV*/
 
 .navbar {
@@ -133,10 +135,34 @@ body {
 /*TRILHA DE ESTUDOS*/
 
 .card:hover {
-  background-color: grey;
+  -webkit-box-shadow: 0px 0px 0px 1px var(--dark-green);
+  -moz-box-shadow: 0px 0px 0px 1px var(--dark-green);
+  box-shadow: 0px 0px 0px 1px var(--dark-green);
   transform: scale(1.05);
   transition: all 1s;
+  z-index: 10;
 }
+
+
+
+.dropdown-menu p {
+  min-width: 80px;
+}
+
+
+.dropdown-item img {
+  width: 15%;
+}
+
+.dark-btn {
+  background-color: var(--dark-green);
+  color: white;
+  width: 90%;
+}
+
+/* .dark-btn:hover {
+  
+} */
 
 /*NASA PHOTO OF THE DAY*/
 

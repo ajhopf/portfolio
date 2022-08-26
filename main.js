@@ -75,4 +75,10 @@ function getPhoto() {
   }, 50);
 }
 
-window.addEventListener('load', getPhoto);
+window.addEventListener('load', () => {
+  getPhoto();
+
+  //AOS init
+
+  AOS.init();
+});

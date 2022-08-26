@@ -4,8 +4,7 @@
 
 :root {
   --dark-green: #253336;
-  --light-blue: #27363B;
-  --lighter-blue: #717C80;
+  --lighter-blue: #5c696e;
 }
 
 body {
@@ -134,16 +133,20 @@ body {
 
 /*TRILHA DE ESTUDOS*/
 
+
+
 .card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px var(--dark-green);
-  -moz-box-shadow: 0px 0px 0px 1px var(--dark-green);
-  box-shadow: 0px 0px 0px 1px var(--dark-green);
+  -webkit-box-shadow: 0px 0px 0px 3px var(--dark-green);
+  -moz-box-shadow: 0px 0px 0px 3px var(--dark-green);
+  box-shadow: 0px 0px 0px 3px var(--dark-green);
   transform: scale(1.05);
-  transition: all 1s;
   z-index: 10;
 }
 
-
+.toBe {
+  background-color: var(--lighter-blue);
+  color: white;
+}
 
 .dropdown-menu p {
   min-width: 80px;

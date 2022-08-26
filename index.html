@@ -8,6 +8,8 @@
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,24 +100,35 @@
 
     <main>     
     <!--Trilha de estudos-->
-      <section class="row trilha-de-estudos justify-content-center mx-0 my-5">
-        <div class="col-11 text-center">
+      <section class="row trilha-de-estudos justify-content-center mx-0 my-5" >
+        <div class="col-11 text-center" data-aos="fade-up" data-aos-duration="2000">
           <h2>Trilha de Estudos</h2>
 
           <!--Blockquode-->
-          <figure class="text-end d-flex flex-column mt-5">
-            <blockquote class="blockquote align-self-end col-8 col-md-5">
-              <p>O planejamento é um instrumento para raciocinar agora sobre os trabalhos e ações que serão necessários hoje para merecermos um futuro.<br> O produto final do planejamento não é a informação: é sempre o trabalho.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Peter Drucker
-            </figcaption>
-          </figure>
+          <div class="row">
+            <div class="col-12 mt-5">
 
+              <p class="text-center">Para melhor evoluir em minha jornada, desenvolvi uma trilha de estudos com os principais conteúdos a serem abordados, evitando desta forma não saber qual será meu próximo passo. 
+              <p class="text-center">Esta trilha é apenas um mapa de estudos, sendo adaptável às minhas demandas atuais.</p> 
+              <p class="text-center">Os itens com o background cinza ainda não foram estudados.</p>
+              </p>
+
+              <figure class="text-end d-flex flex-column mt-5">
+                <blockquote class="blockquote align-self-end col-8 col-md-5">
+                  <p>A goal without a plan is just a wish.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Antoine de Saint-Exupéry
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          
+          <!--Conteúdos-->
           <div class="row cards justify-content-center">
 
             <!--HTML-->
-            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3">
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3" data-aos="fade-right" data-aos-duration="2000">
               <img src="./assets/images/icones/html.png" class="card-img-top mt-3 h-100" alt="Logo do HTML 5">
 
               <div class="card-body">
@@ -124,13 +137,13 @@
             </div>
 
             <!--CSS-->
-            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3">
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3" data-aos="fade-down" data-aos-duration="2000">
               <img src="./assets/images/icones/css.png" class="card-img-top mt-3 h-100" alt="Logo do CSS 3">
 
               <div class="card-body d-flex flex-column justify-content-between">
                 <h3 class="card-title mt-2 mb-5">CSS 3</h3>
 
-                <div class="dropdown-center">
+                <div class="dropup-center dropup">
                   <button class="btn dark-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Frameworks
                   </button>
@@ -141,7 +154,7 @@
                       <p class="m-0">Bootstrap</p>
                     </li>
 
-                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center">
+                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center toBe">
                       <img src="./assets/images/icones/tailwind.png" alt="Logo do Tailwind">
                       <p class="m-0">Tailwind</p>
                     </li>  
@@ -152,28 +165,28 @@
             </div>
             
             <!--JavaScript-->
-            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3">
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3" data-aos="fade-left" data-aos-duration="2000">
               <img src="./assets/images/icones/js.png" class="card-img-top mt-3 h-100" alt="...">
               <div class="card-body">
                 <h3 class="card-title mt-2 mb-5">JavaScript</h3>
                 
-                <div class="dropdown-center">
+                <div class="dropup-center dropup">
                   <button class="btn dark-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Frameworks
                   </button>
       
                   <ul class="dropdown-menu">
-                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center">
+                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center toBe">
                       <img src="./assets/images/icones/react.png" alt="Logo do React">
                       <p class="m-0">React</p>
                     </li>
 
-                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center">
+                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center toBe">
                       <img src="./assets/images/icones/angular.png" alt="Logo do Angular">
                       <p class="m-0">Angular</p>
                     </li>
 
-                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center">
+                    <li class="dropdown-item d-inline-flex justify-content-evenly align-items-center toBe">
                       <img src="./assets/images/icones/vue.png" alt="Logo do Vue.js">
                       <p class="m-0">Vue.js</p>
                     </li>
@@ -184,7 +197,7 @@
             </div>
 
             <!--NodeJS-->
-            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3">
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3 toBe" data-aos="fade-right" data-aos-duration="2000">
               <img src="./assets/images/icones/nodejs.png" class="card-img-top mt-3 h-100" alt="Logo do NodeJs">
               <div class="card-body">
                 <h3 class="card-title mt-2 mb-5">NodeJs</h5>
@@ -193,7 +206,7 @@
             </div>
 
             <!--MongoDb-->
-            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3" >
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3 toBe" data-aos="fade-up" data-aos-duration="2000">
               <img src="./assets/images/icones/mongodb.png" class="card-img-top mt-3 h-100" alt="Logo do MongoDB">
               <div class="card-body">
                 <h3 class="card-title mt-4 mb-5">MongoDB</h3>
@@ -201,7 +214,7 @@
             </div>
 
             <!--Python-->
-            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3">
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3 toBe" data-aos="fade-left" data-aos-duration="2000">
               <img src="./assets/images/icones/python.png" class="card-img-top mt-3 h-100" alt="Logo do Python">
               <div class="card-body">
                 <h3 class="card-title mt-2 mb-5">Python</h3>
@@ -211,7 +224,7 @@
             
 
             <!--AWS-->
-            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3" >
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3 toBe" data-aos="fade-right" data-aos-duration="2000">
               <img src="./assets/images/icones/aws.png" class="card-img-top mt-3 h-100" alt="Logo do AWS">
               <div class="card-body">
                 <h3 class="card-title mt-4 mb-5">AWS</h3>
@@ -292,6 +305,8 @@
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--My script-->
     <script src="./main.js"></script>
   </body>

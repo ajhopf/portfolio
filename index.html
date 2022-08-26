@@ -20,11 +20,16 @@
   <body>
 
     <!--Nav bar-->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+
       <div class="container-fluid">
-        <a class="navbar-brand ms-md-4" href="#"><img src="./assets/images/LOGO.png" alt="André Hopf Logo" ></a>
-        <button
-          class="navbar-toggler"
+
+        <a class="navbar-brand ms-md-4" href="#"><img src="./assets/images/logo-branco.png" alt="André Hopf Logo" ></a>
+
+
+      <!--  Botão padrão do bootstrap
+          <button
+          class="navbar-toggler border border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -33,26 +38,45 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+
+      <!--Meu botão customizado-->
+        <button
+          id="menu-mobile"
+          class="menu-mobile"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-white text-center" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link text-white text-center" href="#">Sobre</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle text-white text-center"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Projetos
               </a>
-              <ul class="dropdown-menu">
+              
+              <ul class="dropdown-menu dropdown-menu-end text-center">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider" /></li>
@@ -61,11 +85,15 @@
                 </li>
               </ul>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link text-white text-center" href="#">Contato</a>
             </li>
           </ul>
-          <!-- <form class="d-flex" role="search">
+
+          <!-- Search input
+            
+            <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
@@ -76,25 +104,34 @@
               Search
             </button>
           </form> -->
+
         </div>
       </div>
     </nav>
     <!--Header - Welcome Banner -->
-    <header class="welcomeBanner">
+    <header class="welcomeBanner d-flex">
       <div class="container px-4 px-lg-5 d-flex flex-column align-items-center justify-content-center">
-        <div class="welcomeBannerAndre my-5">
-          <img id='andre' class='img-fluid rounded-circle' src="./assets/images/andre.JPG">
+        <div class='row justify-content-center'>
+          <div class="andrePhoto my-5">
+            <img id='andre' class='img-fluid rounded-circle' src="./assets/images/andre.JPG">
+          </div>
         </div>
         
-        <div class="d-flex flex-column justify-content-center">
+        <div class="row d-flex flex-column">
+          <h1 class="mx-auto text-center text-uppercase">André Hopf</h1>
+          <h2 class="text-white text-center mx-auto mt-2 ">Full-Stack Developer</h2>
+        </div>
+        
+        <!-- <div class="d-flex flex-column justify-content-center">
             <h1 class="mx-auto text-uppercase">André Hopf</h1>
             <h2 class="text-white mx-auto mt-2 ">Full-Stack Developer</h2>
-        </div>
+        </div> -->
+
       </div>
     </header>
     <main>     
     <!--Trilha de estudos-->
-      <section class="row trilha-de-estudos justify-content-center mx-0">
+      <section class="row trilha-de-estudos justify-content-center mx-0 my-5">
         <div class="col-11 text-center">
           <h2>Trilha de Estudos</h2>
           <div class="row cards justify-content-center">

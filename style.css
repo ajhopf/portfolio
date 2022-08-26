@@ -2,20 +2,77 @@
   height: 75vh;
 } */
 
+:root {
+  --dark-green: #253336;
+  --light-blue: #27363B;
+  --lighter-blue: #717C80;
+}
+
 body {
   overflow-x: hidden;
 
 }
 
+/*NAV*/
+
+.navbar {
+  background-color: var(--dark-green);
+}
+
+.navbar-brand img {
+  height: 50px
+}
+
+.menu-mobile{
+  background-color: var(--dark-green);
+  border: 0;
+}
+
+.menu-mobile .bar {
+  /* display: block; */
+  width: 45px;
+  height: 3px;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+  background: #FFF;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .menu-mobile .bar {
+    display: block
+  }
+}
+  
+
+#menu-mobile.is-active .bar:nth-child(2){
+  opacity: 0;
+}
+
+#menu-mobile.is-active .bar:nth-child(1){
+  transform: translateY(11px) rotate(45deg)
+}
+
+#menu-mobile.is-active .bar:nth-child(3){
+  transform: translateY(-11px) rotate(-45deg)
+}
+
+/*BANNER*/
+
 .welcomeBanner {
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 35rem;
   padding: 15rem 0;
 }
 
+@media (min-width:576) {
+  .welcomeBanner {
+    height: 100vh;
+  }
+}
 
+/*Colocandoo background no pseudoelemento before para poder aplicar um filtro de grayscale apenas a ele*/
 .welcomeBanner::before {
   content: "";
   position: absolute;
@@ -31,7 +88,9 @@ body {
   z-index: -10;
 }
 
+
 .welcomeBanner h1 {
+  text-align: center;
   font-family: 'Varela Round', sans-serif;
   font-size: 4rem;
   letter-spacing: 0.5rem;
@@ -41,13 +100,20 @@ body {
           background-clip: text;
 }
 
-.welcomeBannerAndre {
-  height: 50%;
-  width: 50%;
+.andrePhoto {
+  height: 60%;
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .andrePhoto {
+    height: 50%;
+    width: 50%;
+  }
 }
 
 @media (min-width:1200px) {
-  .welcomeBannerAndre {
+  .andrePhoto {
     height: 40%;
     width: 40%;
   }
@@ -56,28 +122,15 @@ body {
 
 #andre {
   filter: grayscale(100%);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #andre:hover {
-  filter:grayscale(30%)
+  filter:grayscale(40%)
 }
 
 
-
-
-.navbar-brand img {
-  height: 50px
-}
-
-.carousel-inner img {
-  height: auto;
-  width: auto;
-}
-
-/* .card {
-  background-color: white;
-} */
+/*TRILHA DE ESTUDOS*/
 
 .card:hover {
   background-color: grey;
@@ -85,3 +138,10 @@ body {
   transition: all 1s;
 }
 
+/*NASA PHOTO OF THE DAY*/
+
+
+.carousel-inner img {
+  height: auto;
+  width: auto;
+}

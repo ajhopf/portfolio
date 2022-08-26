@@ -1,4 +1,12 @@
-//Javascript para o banner principal
+//JavaScript Nav
+
+const menuMobile = document.querySelector('#menu-mobile');
+
+menuMobile.addEventListener('click', () => {
+  menuMobile.classList.toggle('is-active');
+});
+
+//Javascript para o banner nasaPhoto
 
 //const firstImage = document.querySelector('#carousel1');
 //const secondImage = document.querySelector('#carousel2');

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio || André Hopf</title>
+    <title>Portfolio | André Hopf</title>
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -99,7 +99,7 @@
     </header>
 
     <main>     
-    <!--Trilha de estudos-->
+    <!--Study roadmap-->
       <section class="row trilha-de-estudos justify-content-center mx-0 my-5" >
         <div class="col-11 text-center" data-aos="fade-up" data-aos-duration="2000">
           <h2>Trilha de Estudos</h2>
@@ -124,7 +124,7 @@
             </div>
           </div>
           
-          <!--Conteúdos-->
+          <!--Technologies-->
           <div class="row cards justify-content-center">
 
             <!--HTML-->
@@ -231,17 +231,29 @@
               </div>
             </div>
 
+            <!--Git-->
+            <div class="card col-12 col-sm-10 col-md-4 col-lg-3 m-3" data-aos="fade-up" data-aos-duration="2000">
+              <img src="./assets/images/icones/git.png" class="card-img-top mt-3 h-100" alt="Logo do AWS">
+              <div class="card-body">
+                <h3 class="card-title mt-4 mb-5">Git and Github</h3>
+              </div>
+            </div>
+
 
           </div>
           
         </div>
 
       </section>
-    <!--Foto do dia Nasa-->
-      <section class='row nasaPhoto bg-dark px-0'>
 
+    <!--Photo of the day Nasa-->
+      <section class='row bg-dark mx-0 justify-content-center'>
+
+        <!--Images and texts-->
         <div class="row px-0">
           <h2 class="text-white my-3 text-center">Astronomy Picture of the Day</h2>
+          <p class="text-white text-center">Every day a new image or video with an explanation.</p>
+          <p class="text-white text-center">You can also view the images from previous days using the 'Choose Day' option below.</p>
           <div class="photoContainer container d-flex flex-column px-0">
             <img id="nasaPhoto" class='img-fluid mx-auto' src=""  alt="">
             <iframe class='mx-auto' id='nasaVideo' src="" frameborder="0" ></iframe>
@@ -249,32 +261,44 @@
         </div>
         
 
-        <!--Collapsable explanation-->
-        <div class="container my-2 px-0 w-75">
-          <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleComment" aria-expanded="false" aria-controls="collapsibleComment">
-            Comentário sobre a foto
-          </button>
-          <div class="collapse mt-2" id="collapsibleComment">
-            <div id='photoCommentary' class="card card-body">
+        <!--Buttons-->
+
+        <div class="row justify-content-center">
+          <!--Explanation-->
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="container my-2 px-0 w-100">
+              <button class="btn w-100 dark-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleComment" aria-expanded="false" aria-controls="collapsibleComment">
+            Explanation
+              </button>
+
+              <div class="collapse mt-2" id="collapsibleComment">
+                <div id='photoCommentary' class="card card-body d-flex flex-column px-5">
               Looks like you couldn't get the content from the photo.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Choose the day-->
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="container my-2 px-0 w-100 ">
+              <button class="btn w-100 dark-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleForm" aria-expanded="false" aria-controls="collapsibleForm">
+                Choose the Day
+              </button>
+              <div class="collapse mt-2" id="collapsibleForm">
+                <form class="d-flex flex-column" id="nasaForm">
+                  <label for="photoDate" class="form-label text-white mx-auto">Escolha uma data para alterar a foto</label>
+                  <input id="photoDate" class="form-control text-center" type="date" required>
+                  <button id='nasaFormBtn' class="btn btn-secondary mt-1" type="submit">Submit form</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-
-        <!--Choose your day-->
-        <div class="container my-2 px-0 w-75 ">
-          <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleForm" aria-expanded="false" aria-controls="collapsibleForm">
-            Choose the Day
-          </button>
-          <div class="collapse mt-2" id="collapsibleForm">
-            <form class="d-flex flex-column px-5" id="nasaForm">
-              <label for="photoDate" class="form-label text-white mx-auto">Escolha uma data para alterar a foto</label>
-              <input id="photoDate" class="form-control text-center" type="date" required>
-              <button id='nasaFormBtn' class="btn btn-primary mt-1" type="submit">Submit form</button>
-            </form>
-          </div>
-        </div>
+        
       </section>
+
+    <!--Projects-->
+      <section></section>
 
 
     </main>

@@ -163,6 +163,13 @@ body {
   width: 90%;
 }
 
+.dark-btn:hover, .dark-btn:focus {
+  background-color: white;
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+
 /* .dark-btn:hover {
   
 } */

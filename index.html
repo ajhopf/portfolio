@@ -237,13 +237,14 @@
         </div>
 
       </section>
+    <!--Foto do dia Nasa-->
+      <section class='row nasaPhoto bg-dark px-0'>
 
-      <section class='row nasaPhoto bg-dark justify-content-center'>
-
-        <div class="row">
-          <h2 class="text-white my-3 text-center">Nasa Photo of The Day</h2>
-          <div class="photoContainer container d-flex flex-column">
-            <img id="nasaPhoto" class='img-fluid mx-auto' src="" alt="">
+        <div class="row px-0">
+          <h2 class="text-white my-3 text-center">Astronomy Picture of the Day</h2>
+          <div class="photoContainer container d-flex flex-column px-0">
+            <img id="nasaPhoto" class='img-fluid mx-auto' src=""  alt="">
+            <iframe class='mx-auto' id='nasaVideo' src="" frameborder="0" ></iframe>
           </div>
         </div>
         
@@ -257,6 +258,20 @@
             <div id='photoCommentary' class="card card-body">
               Looks like you couldn't get the content from the photo.
             </div>
+          </div>
+        </div>
+
+        <!--Choose your day-->
+        <div class="container my-2 px-0 w-75 ">
+          <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleForm" aria-expanded="false" aria-controls="collapsibleForm">
+            Choose the Day
+          </button>
+          <div class="collapse mt-2" id="collapsibleForm">
+            <form class="d-flex flex-column px-5" id="nasaForm">
+              <label for="photoDate" class="form-label text-white mx-auto">Escolha uma data para alterar a foto</label>
+              <input id="photoDate" class="form-control text-center" type="date" required>
+              <button id='nasaFormBtn' class="btn btn-primary mt-1" type="submit">Submit form</button>
+            </form>
           </div>
         </div>
       </section>

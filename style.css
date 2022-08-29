@@ -169,8 +169,10 @@ body {
 
 /*NASA PHOTO OF THE DAY*/
 
+.photoContainer {
+  max-height: 80vh;
+}
 
-.carousel-inner img {
-  height: auto;
-  width: auto;
+#nasaPhoto {
+  max-height: 100%;
 }

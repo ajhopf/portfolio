@@ -6,25 +6,9 @@ menuMobile.addEventListener('click', () => {
   menuMobile.classList.toggle('is-active');
 });
 
-//Javascript para o banner nasaPhoto
+//JavaScript APOD
 
-//const firstImage = document.querySelector('#carousel1');
-//const secondImage = document.querySelector('#carousel2');
-//const thirdImage = document.querySelector('#carousel3');
-
-//Adicionando responsividade, fazendo com que a imagem e a descrição sejam atualizadas ao clicar nas setas ou nos indicadores
-
-const slideIndicators = document.querySelectorAll(
-  '.carousel-indicators button'
-);
-
-slideIndicators.forEach(button => button.addEventListener('click', getPhoto));
-
-let previous = document.querySelector('.carousel-control-prev-icon');
-let next = document.querySelector('.carousel-control-next-icon');
-
-previous.addEventListener('click', getPhoto);
-next.addEventListener('click', getPhoto);
+const photo = document.querySelector('#nasaPhoto');
 
 //data de hoje
 let today = new Date();
@@ -32,7 +16,7 @@ today = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDay()} `;
 
 //inserindo a descrição
 function getDescription(text) {
-  let slideExplanation = document.querySelector('#slideExplanation');
+  let slideExplanation = document.querySelector('#photoCommentary');
 
   slideExplanation.innerText = text;
 }
@@ -52,33 +36,51 @@ async function nasaPhoto(photo, date = today) {
   getDescription(explanation);
 }
 
-//função com a data a ser chamada
-function getPhoto() {
-  //setTimeout utilizado para que haja um delay entre o clique e a função, pois sem este recurso estava sempre retornando o item antigo
-  setTimeout(() => {
-    const activeImage = document.querySelector('.carousel-item.active img');
-    let date = '';
-
-    switch (activeImage.id) {
-      case 'carousel1':
-        date = today;
-        break;
-      case 'carousel2':
-        date = '2020-08-17';
-        break;
-      case 'carousel3':
-        date = today;
-        break;
-    }
-
-    nasaPhoto(activeImage, date);
-  }, 50);
-}
-
 window.addEventListener('load', () => {
-  getPhoto();
-
-  //AOS init
-
   AOS.init();
+
+  nasaPhoto(photo);
 });
+
+//Javascript para o banner nasaPhoto
+
+//const firstImage = document.querySelector('#carousel1');
+//const secondImage = document.querySelector('#carousel2');
+//const thirdImage = document.querySelector('#carousel3');
+
+//Adicionando responsividade, fazendo com que a imagem e a descrição sejam atualizadas ao clicar nas setas ou nos indicadores
+
+// const slideIndicators = document.querySelectorAll(
+//   '.carousel-indicators button'
+// );
+
+// slideIndicators.forEach(button => button.addEventListener('click', getPhoto));
+
+// let previous = document.querySelector('.carousel-control-prev-icon');
+// let next = document.querySelector('.carousel-control-next-icon');
+
+// previous.addEventListener('click', getPhoto);
+// next.addEventListener('click', getPhoto);
+
+//função com a data a ser chamada
+// function getPhoto() {
+//   //setTimeout utilizado para que haja um delay entre o clique e a função, pois sem este recurso estava sempre retornando o item antigo
+//   setTimeout(() => {
+//     const activeImage = document.querySelector('.carousel-item.active img');
+//     let date = '';
+
+//     switch (activeImage.id) {
+//       case 'carousel1':
+//         date = today;
+//         break;
+//       case 'carousel2':
+//         date = '2020-08-17';
+//         break;
+//       case 'carousel3':
+//         date = today;
+//         break;
+//     }
+
+//     nasaPhoto(activeImage, date);
+//   }, 50);
+// }

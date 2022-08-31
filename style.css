@@ -9,7 +9,7 @@
   --light-grey: #5c696e;
 }
 
-html {
+html, body {
   overflow-x: hidden;
 }
 

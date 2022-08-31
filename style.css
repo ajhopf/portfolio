@@ -9,9 +9,14 @@
   --light-grey: #5c696e;
 }
 
+/*Code for white space on right side of mobile view*/
 html, body {
   overflow-x: hidden;
 }
+/*Code for inner scroll bar inside body*/
+body {
+  overflow-y: hidden;
+ }
 
 /*NAV*/
 
@@ -65,7 +70,7 @@ html, body {
   width: 100%;
   height: 100vh;
   padding: 15rem 0;
-  
+  overflow-y: hidden;
 }
 
 

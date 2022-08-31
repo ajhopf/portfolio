@@ -9,17 +9,15 @@
   --light-grey: #5c696e;
 }
 
-body {
+html {
   overflow-x: hidden;
-
 }
-
-
 
 /*NAV*/
 
 .navbar {
   background-color: var(--dark-green);
+  max-width: 100vw;
 }
 
 .navbar-brand img {
@@ -67,7 +65,9 @@ body {
   width: 100%;
   height: 100vh;
   padding: 15rem 0;
+  
 }
+
 
 @media (min-width:576) {
   .welcomeBanner {

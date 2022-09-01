@@ -200,6 +200,12 @@ body {
   --bs-accordion-btn-color: #fff;
 }
 
+/*Projects Carousel*/
+
+#carouselExampleCaptions .container {
+  max-height: 100vh;
+}
+
 
 /*NASA PHOTO OF THE DAY*/
 

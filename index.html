@@ -125,7 +125,7 @@
           </div>
           
           <!--Technologies-->
-          <div class="row cards justify-content-center">
+          <div class="technologies row cards justify-content-center">
 
             <!--HTML-->
             <div class="card col-10 col-sm-5 col-lg-3 m-3" data-aos="fade-right" data-aos-duration="2000">
@@ -301,68 +301,87 @@
     
       <!--Projects-->
       <section class="row justify-content-center mx-0 py-4" data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-center">Projetos</h2>
+        <div class="col-11 col-md-12 col-lg-10">
+          <h2 class="text-center">Projetos</h2>
+      
         <!--Projects carousel-->
-        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
+        <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
           <div class="carousel-inner">
+            <!--first item-->
             <div class="carousel-item active">
-              <div class="container justify-content-center">
-                <img class='img-fluid mx-auto' src="./assets/images/projects/rockpaperscissors.JPG" class="d-block w-100" alt="...">
-              </div>
-              
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/projects/rockpaperscissors.JPG" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <!--second item-->
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/projects/adopet.JPG" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+            <!--third item-->
+            <div class="carousel-item">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/projects/kidcode.JPG" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
             </div>
 
+            <!--fourth item-->
             <div class="carousel-item">
-              <div class="container">
-                <img src="./assets/images/projects/adopet.JPG" class="d-block w-100" alt="...">
-              </div>
-              
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/projects/exercism.JPG" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="card-title">Card title 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
             </div>
 
-            <div class="carousel-item">
-              <img src="./assets/images/projects/kidcode.JPG" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
 
-            <div class="carousel-item">
-              <div class="container">
-                <img src="./assets/images/projects/exercism.JPG" class="d-block w-100" alt="...">
-              </div>
-              
-              <div class="carousel-caption d-none d-md-flex flex-column">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </section>
     
+        </div>
     
       
       
@@ -428,7 +447,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--My script-->
-    <script src="./main.js"></script>
+    <!--My scripts-->
+    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/projects-carousel.js"></script>
   </body>
 </html>

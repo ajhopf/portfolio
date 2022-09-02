@@ -19,7 +19,6 @@ let today = new Date();
 today = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()} `;
 
 let newToday = new Date();
-console.log(newToday.getDay());
 
 // console.log(today);
 

@@ -140,7 +140,9 @@ body {
 
 /*TRILHA DE ESTUDOS*/
 
-
+.card {
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
 
 .technologies .card:hover {
   -webkit-box-shadow: 0px 0px 0px 3px var(--dark-green);
@@ -207,8 +209,7 @@ body {
 }
 
 .carousel-inner .card {
-  margin: 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  margin: 0.25rem;
   
 }
 
@@ -239,7 +240,23 @@ body {
 }
 
 
+.carousel-inner .dark-btn {
+  margin: 0.2rem 0.2rem 0;
+}
+
+
+/* @media screen and (min-width:1280px) {
+  .carousel-inner .dark-btn {
+    width: 40%;
+  }
+} */
+
+
+
+
 @media screen and (min-width:768px) {
+
+
   .carousel-inner {
     display: flex;
   }
@@ -253,7 +270,9 @@ body {
   .carousel-inner .card .image-wrapper {
     height:23vw;
   }
+
 }
+
 
 
 

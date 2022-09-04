@@ -52,14 +52,8 @@
             <li class="nav-item">
               <a class="nav-link text-white text-center" href="#aboutMe">Sobre</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white text-center"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li class="nav-item">
+              <a class="nav-link text-white text-center" href="#projects">
                 Projetos
               </a>
               
@@ -249,7 +243,7 @@
 
     <!--About-->
       <section class="row bg-dark justify-content-center mx-0 pt-3 pb-4" data-aos="fade-up" data-aos-duration="1500">
-        <h2 class="text-white text-center" >About Me</h2>
+        <h2 class="text-white text-center" >Sobre</h2>
 
         <!--Accordion-->
         <div class="accordion my-accordion col-11 col-lg-9 col-xl-7" id="accordionAboutMe" data-aos="fade-right" data-aos-duration="3000">
@@ -294,11 +288,12 @@
                 <p>Atualmente estou cursando a formação Full-Stack da Tera, com previsão de término em fevereiro de 2023. Além disso, utilizo plataformas educacionais como a Alura e Codecademy.</p>
                 <p>Meu objetivo principal hoje é me inserir no mercado de trabalho, de forma a possibilitar que minha evolução seja acelerada e que meus estudos sejam direcionados às necessidades da empresa e do mercado.</p>
               </div>
+              
             </div>
           </div>
         </div>
       </section>
-    
+      <span id="projects"></span>
       <!--Projects-->
       <section class="row justify-content-center mx-0 py-4" data-aos="fade-up" data-aos-duration="2000">
         <div class="col-11 col-md-12 col-lg-10">
@@ -307,64 +302,74 @@
         <!--Projects carousel-->
         <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <!--first item-->
+            <!--first item rockpaperscissors-->
             <div class="carousel-item active">
-              <div class="card">
+              <div class="card h-100">
                 <div class="image-wrapper">
                   <img src="./assets/images/projects/rockpaperscissors.JPG" alt="...">
                 </div>
                 
-                <div class="card-body">
-                    <h5 class="card-title">Card title 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body text-center d-flex flex-column justify-content-between my-1">
+                    <h3 class="card-title">Rock Paper Scissors</h3>
+                    <p class="card-text">Remake do clássico jogo pedra, papel e tesoura utilizando o design fornecido pelo site <a href="https://www.frontendmentor.io/">Frontend Mentor</a>.</p>
+                    <div class="card-btn d-flex flex-column flex-xl-row justify-content-center">
+                      <a href="https://ajhopf.github.io/rock-paper-scissors/" class="btn dark-btn" target="_blank">Página</a>
+                      <a href="https://github.com/ajhopf/rock-paper-scissors" class="btn dark-btn" target="_blank">Repositório</a>
+                    </div>
+                    
                 </div>
             </div>
-            <!--second item-->
+            <!--second item adopet-->
             </div>
             <div class="carousel-item">
-              <div class="card">
+              <div class="card h-100">
                 <div class="image-wrapper">
                   <img src="./assets/images/projects/adopet.JPG" alt="...">
                 </div>
                 
-                <div class="card-body">
-                    <h5 class="card-title">Card title 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body text-center d-flex flex-column justify-content-between my-1">
+                    <h3 class="card-title">Adopet</h3>
+                    <p class="card-text">Projeto desenvolvido durante o front-end challenge promovido pela <a href="https://www.alura.com.br/">Alura</a></p>
+                    <div class="card-btn d-flex flex-column flex-xl-row justify-content-center">
+                      <a href="https://ajhopf.github.io/adoPet-challenge/" target="_blank" class="btn dark-btn">Página</a>
+                      <a href="https://github.com/ajhopf/adoPet-challenge" target="_blank" class="btn dark-btn">Repositório</a>  
+                    </div>
                 </div>
             </div>
             </div>
-            <!--third item-->
+            <!--third item kidcode-->
             <div class="carousel-item">
-              <div class="card">
+              <div class="card h-100">
                 <div class="image-wrapper">
                   <img src="./assets/images/projects/kidcode.JPG" alt="...">
                 </div>
                 
-                <div class="card-body">
-                    <h5 class="card-title">Card title 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body text-center d-flex flex-column justify-content-between my-1">
+                    <h3 class="card-title">Kidcode</h3>
+                    <p class="card-text">Plataforma educacional em desenvolvimento para o curso Full-Stack da <a href="https://somostera.com">Tera</a>.</p>
+                    <div class="card-btn d-flex flex-column flex-xl-row justify-content-center">
+                      <a href="https://kidcode-cyan.vercel.app/" target="_blank" class="btn dark-btn">Página</a>
+                      <a href="https://github.com/ajhopf/kidcode" target="_blank" class="btn dark-btn">Repositório</a>
+                    </div>
+                    
                 </div>
             </div>
             </div>
 
-            <!--fourth item-->
+            <!--fourth item exercism-->
             <div class="carousel-item">
-              <div class="card">
+              <div class="card h-100">
                 <div class="image-wrapper">
                   <img src="./assets/images/projects/exercism.JPG" alt="...">
                 </div>
                 
-                <div class="card-body">
-                    <h5 class="card-title">Card title 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body text-center d-flex flex-column justify-content-between my-1">
+                    <h3 class="card-title">Exercism JavaScript</h3>
+                    <p class="card-text">Repositório contendo a resolução dos desafios da plataforma <a href="https://exercism.org/">Exercism</a>. Cada pasta contém um desafio e sua explicação.</p>
+                    <div class="card-btn d-flex flex-column flex-xl-row justify-content-center">
+                      <a href="https://github.com/ajhopf/exercism-js" target="_blank" class="btn dark-btn">Repositório</a>
+                    </div>
+                    
                 </div>
             </div>
             </div>
@@ -393,8 +398,8 @@
       <!--Images and texts-->
       <div class="row px-0">
         <h2 class="text-white my-3 text-center">Astronomy Picture of the Day</h2>
-        <p class="text-white text-center">Every day a new image or video with an explanation.</p>
-        <p class="text-white text-center">You can also view the images from previous days using the 'Choose Day' option below.</p>
+        <p class="text-white text-center">Todo dia uma nova imagem ou vídeo com um respectivo comentário.</p>
+        <p class="text-white text-center">Você também pode visualizar a imagem de dias anteriores utilizando a opção "Escolha outra data" abaixo.</p>
         <div class="photoContainer container d-flex flex-column px-0">
           <img id="nasaPhoto" class='img-fluid mx-auto' src=""  alt="">
           <iframe class='mx-auto' id='nasaVideo' src="" frameborder="0" ></iframe>
@@ -409,7 +414,7 @@
         <div class="col-12 col-md-6 col-lg-5">
           <div class="container my-2 px-0 w-100">
             <button class="btn w-100 dark-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleComment" aria-expanded="false" aria-controls="collapsibleComment">
-          Explanation
+          Comentário
             </button>
 
             <div class="collapse mt-2" id="collapsibleComment">
@@ -423,7 +428,7 @@
         <div class="col-12 col-md-6 col-lg-5">
           <div class="container my-2 px-0 w-100 ">
             <button class="btn w-100 dark-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleForm" aria-expanded="false" aria-controls="collapsibleForm">
-              Choose the Day
+              Escolha outra data
             </button>
             <div class="collapse mt-2" id="collapsibleForm">
               <form class="d-flex flex-column" id="nasaForm">

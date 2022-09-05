@@ -354,4 +354,46 @@ body {
 .end{
   background-color: var(--dark-green);
   padding: 8px 12px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 0.5fr 0.5fr;
+  grid-template-areas: 'white-space text white logo';
 }
+
+.end .text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.end .text hr {
+  margin: 0.5rem;
+}
+
+.end .text p {
+  margin: 0;
+}
+
+.end .logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: end;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  margin-right: 1rem;
+}
+/* .end .col {
+  color: white;
+  height: 50px;
+}
+
+.end div[class*='col-']:nth-child(1) {
+  font-size: 0.5rem;
+  color: white;
+  height: 50px;
+} */
